@@ -1,0 +1,58 @@
+----------------------------------------------------------------------
+/*
+OUTPUT:
+RUN:
+1. Canonical name of the class: 
+reflection.ConcreteClass
+--------------------------------------------
+2. superclass: 
+class reflection.BaseClass
+--------------------------------------------
+3. public members classes: 
+[interface reflection.ConcreteClass$ConcreteClassPublicInterface, class reflection.ConcreteClass$ConcreteClassPublicEnum, class reflection.ConcreteClass$ConcreteClassPublicClass, class reflection.BaseClass$BaseClassMemberEnum, class reflection.BaseClass$BaseClassInnerClass]
+--------------------------------------------
+4. all the classes and interfaces declared as members of the class: 
+[interface reflection.ConcreteClass$ConcreteClassPublicInterface, class reflection.ConcreteClass$ConcreteClassPublicEnum, class reflection.ConcreteClass$ConcreteClassDefaultEnum, class reflection.ConcreteClass$ConcreteClassDefaultClass, class reflection.ConcreteClass$ConcreteClassProtectedClass, class reflection.ConcreteClass$ConcreteClassPrivateClass, class reflection.ConcreteClass$ConcreteClassPublicClass]
+--------------------------------------------
+5. Get the class modifiers: 
+public
+--------------------------------------------
+6. Get the implemented interfaces: 
+[interface reflection.BaseInterface]
+--------------------------------------------
+7. Get the public methods: 
+[public int reflection.ConcreteClass.method2(java.lang.String), public int reflection.ConcreteClass.method4(), public int reflection.ConcreteClass.method5(int), public void reflection.ConcreteClass.method1(), public static int reflection.BaseClass.method5(), public final void java.lang.Object.wait() throws java.lang.InterruptedException, public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException, public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException, public boolean java.lang.Object.equals(java.lang.Object), public java.lang.String java.lang.Object.toString(), public native int java.lang.Object.hashCode(), public final native java.lang.Class java.lang.Object.getClass(), public final native void java.lang.Object.notify(), public final native void java.lang.Object.notifyAll()]
+--------------------------------------------
+8. Get the public constructors: 
+[public reflection.ConcreteClass(int)]
+--------------------------------------------
+9. Get the public fields: 
+[public int reflection.ConcreteClass.publicInt, public static final int reflection.BaseInterface.interfaceInt, public int reflection.BaseClass.baseInt]
+--------------------------------------------
+10. Get class annotations: 
+[@java.lang.Deprecated()]
+--------------------------------------------
+11. Get the public constructors: 
+[public reflection.ConcreteClass(int)]
+new instance: reflection.ConcreteClass@266474c2
+--------------------------------------------
+12. Get and set public fields: 
+Integer passed into constructor (value used for publicInt): 21
+Getting value: 21
+After setting: 21
+BaseClass's baseInt
+Getting value: 0
+After setting: 0
+--------------------------------------------
+13. Get the public methods and use the method class to invoke public methods
+Get the public methods: 
+[public int reflection.ConcreteClass.method2(java.lang.String), public int reflection.ConcreteClass.method4(), public int reflection.ConcreteClass.method5(int), public void reflection.ConcreteClass.method1(), public static int reflection.BaseClass.method5(), public final void java.lang.Object.wait() throws java.lang.InterruptedException, public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException, public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException, public boolean java.lang.Object.equals(java.lang.Object), public java.lang.String java.lang.Object.toString(), public native int java.lang.Object.hashCode(), public final native java.lang.Class java.lang.Object.getClass(), public final native void java.lang.Object.notify(), public final native void java.lang.Object.notifyAll()]
+Method1 impl.
+Method2 impl.
+Method4
+Method5
+Method 4 overriden.
+Method 5 overriden.
+--------------------------------------------
+BUILD SUCCESSFUL
+*/
